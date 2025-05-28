@@ -39,8 +39,6 @@ Esta aplicación fue creada con fines de **monitoreo de carpetas compartidas en 
 
 La aplicación utiliza un archivo `.env` con las siguientes variables:
 
-pip install -r requirements.txt
-
 
 ```env
 USER=correo_destino@example.com
@@ -48,9 +46,9 @@ USER_ORIGEN=correo_origen@gmail.com
 PASS=contraseña_de_aplicacion_google
 ```
 🛠️ Cómo generar los ejecutables (.exe)
-Instala las dependencias del proyecto:
+# Instala las dependencias del proyecto:
 -pip install -r requirements.txt
-Instala PyInstaller
+-Instala PyInstaller
 -pip install pyinstaller
 Ejecuta los siguientes comandos para generar los ejecutables:
 # Ejecutable de la GUI
