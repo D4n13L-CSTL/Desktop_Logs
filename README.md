@@ -45,11 +45,11 @@ USER=correo_destino@example.com
 USER_ORIGEN=correo_origen@gmail.com
 PASS=contraseña_de_aplicacion_google
 ```
-🛠️ Cómo generar los ejecutables (.exe)
-# Instala las dependencias del proyecto:
--## pip install -r requirements.txt
--## Instala PyInstaller
--## pip install pyinstaller
+# Cómo generar los ejecutables (.exe)
+## Instala las dependencias del proyecto:
+pip install -r requirements.txt
+Instala PyInstaller
+pip install pyinstaller
 
 Ejecuta los siguientes comandos para generar los ejecutables:
 # Ejecutable de la GUI
