@@ -45,21 +45,20 @@ USER=correo_destino@example.com
 USER_ORIGEN=correo_origen@gmail.com
 PASS=contraseña_de_aplicacion_google
 ```
-# Cómo generar los ejecutables (.exe)
-## Instala las dependencias del proyecto:
+## 🛠️ Cómo generar los ejecutables (.exe)
+
+### 1. Instala las dependencias del proyecto:
+
+```bash
 pip install -r requirements.txt
-Instala PyInstaller
+Instala PyInstaller:
 pip install pyinstaller
 
-Ejecuta los siguientes comandos para generar los ejecutables:
-# Ejecutable de la GUI
+# Ejecutable de la interfaz gráfica (GUI)
 pyinstaller --onefile --add-data "rutas.db;." gui.py
 
-# Ejecutable del monitor
+# Ejecutable del monitor de carpetas
 pyinstaller --onefile --add-data "rutas.db;." logs_carpetas.py
 
-🛑 Nota: En Windows, usa ; como separador en --add-data. En Linux/macOS es :.
-
-Esto generará los .exe en la carpeta dist/.
 
 
