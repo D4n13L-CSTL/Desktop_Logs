@@ -49,16 +49,25 @@ PASS=contraseña_de_aplicacion_google
 
 ### 1. Instala las dependencias del proyecto:
 
-```bash
 pip install -r requirements.txt
-Instala PyInstaller:
+
+### 2. Instala PyInstaller:
+
 pip install pyinstaller
 
-# Ejecutable de la interfaz gráfica (GUI)
+### 3. Ejecuta los siguientes comandos para generar los ejecutables:
+Ejecutable de la interfaz gráfica (GUI)
 pyinstaller --onefile --add-data "rutas.db;." gui.py
 
-# Ejecutable del monitor de carpetas
+Ejecutable del monitor de carpetas
 pyinstaller --onefile --add-data "rutas.db;." logs_carpetas.py
 
 
+> 🛑 **Nota:**  
+> En Windows usa `;` como separador en `--add-data`.  
+> En Linux/macOS usa `:` en lugar de `;`.
+
+### 4. Resultado
+
+Los archivos `.exe` se generarán en la carpeta `dist/`.
 
